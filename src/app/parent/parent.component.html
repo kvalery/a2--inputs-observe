@@ -1,0 +1,25 @@
+<h1>parent</h1>
+<br>
+data example 1: {{example1}} -- {{example1Action}}
+<br>
+<br>
+data example 2:
+<input >
+<br>
+<br>
+use @ViewChildren
+<button (click)="checkChild()">go</button>
+<br>
+
+<hr/>
+
+example use service : <input >
+
+<br>
+<hr/>
+<app-child [data]="example1" (action)="exampleAction($event)" [hasButton] = "true"></app-child>
+<app-child ></app-child>
+<app-child >
+   с использованием ng-content
+</app-child>
+
