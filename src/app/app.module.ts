@@ -4,12 +4,15 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { NewComponent } from './new/new.component';
+import { ChildComponent } from './child/child.component';
+import { ParentComponent } from './parent/parent.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    NewComponent
+    ChildComponent,
+    ParentComponent
   ],
   imports: [
     BrowserModule,
@@ -20,3 +23,4 @@ import { NewComponent } from './new/new.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
